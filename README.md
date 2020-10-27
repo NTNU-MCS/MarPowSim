@@ -11,7 +11,7 @@ The library includes models for marine power system components such as diesel-ge
 
 Please include the following reference when you use the MarPowSim toolbox: 
 
-   Bø et al. (2015). Marine Power Systems Simulator (MarPowSim). URL: https://github.com/NTNU-MCS/MarPowSim
+   Bø, T.I., K.K. Yum, A.R. Dahl, M. R. Miyazaki, E. Pedersen, R. Skjetne, T.A. Johansen, and A. J. Sørensen (2015). Marine Power Systems Simulator (MarPowSim). URL: https://github.com/NTNU-MCS/MarPowSim
 
 Also, we encourage to credit the following open access journal article upon using this toolbox:
 
