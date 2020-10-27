@@ -11,11 +11,11 @@ The library includes models for marine power system components such as diesel-ge
 
 Please include the following reference when you use the MarPowSim toolbox: 
 
-   Bø, T.I., K.K. Yum, A.R. Dahl, M. R. Miyazaki, E. Pedersen, R. Skjetne, T.A. Johansen, and A. J. Sørensen (2015). Marine Power Systems Simulator (MarPowSim). URL: https://github.com/NTNU-MCS/MarPowSim
+   Bø, T.I., K.K. Yum, A.R. Dahl, M.R. Miyazaki, E. Pedersen, R. Skjetne, T.A. Johansen, and A.J. Sørensen (2015). Marine Power Systems Simulator (MarPowSim). URL: https://github.com/NTNU-MCS/MarPowSim
 
 Also, we encourage to credit the following open access journal article upon using this toolbox:
 
-Bø, T.I., A.R. Dahl, T.A. Johansen, E. Mathiesen, M. R. Miyazaki, E. Pedersen, R. Skjetne, A. J. Sørensen, L. Thorat, and K. K. Yum, “Marine Vessel and Power Plant System Simulator.” IEEE Access, Vol. 3, pp. 2065-2079, 2015.
+Bø, T.I., A.R. Dahl, T.A. Johansen, E. Mathiesen, M.R. Miyazaki, E. Pedersen, R. Skjetne, A.J. Sørensen, L. Thorat, and K. K. Yum, “Marine Vessel and Power Plant System Simulator.” IEEE Access, Vol. 3, pp. 2065-2079, 2015.
 
 
 Copy the folder /marpowsim to your Matlab folder and "add the path with subfolders" to Matlab path. You can run install.m to do this automatically. Then, see "How to build a model.docx"
