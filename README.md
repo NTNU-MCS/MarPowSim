@@ -21,7 +21,8 @@ Bø, T.I., A.R. Dahl, T.A. Johansen, E. Mathiesen, M. R. Miyazaki, E. Pedersen, 
 Copy the folder /marpowsim to your Matlab folder and "add the path with subfolders" to Matlab path. You can run install.m to do this automatically. Then, see "How to build a model.docx"
 -
 
-For questions, please contact:
+For questions, please contact: 
+
   Torstein Ingebrigtsen Bø (main developer): <Torstein.Bo@sintef.no> 
       
   Kevin Koosup Yum (developer): <KevinKoosup.Yum@sintef.no> 
