@@ -22,11 +22,10 @@ Copy the folder /marpowsim to your Matlab folder and "add the path with subfolde
 -
 
 For questions, please contact:
-  Torstein Ingebrigtsen Bø (main developer):    
-      <Torstein.Bo@sintef.no> 
-  Kevin Koosup Yum (developer):    
-      <KevinKoosup.Yum@sintef.no> 
-  Asgeir Johan Sørensen (D2V project manager):  
-      <asgeir.sorensen@ntnu.no>
-  Roger Skjetne (D2V principal researcher):
-      <roger.skjetne@ntnu.no>
+  Torstein Ingebrigtsen Bø (main developer): <Torstein.Bo@sintef.no> 
+      
+  Kevin Koosup Yum (developer): <KevinKoosup.Yum@sintef.no> 
+      
+  Asgeir Johan Sørensen (D2V project manager): <asgeir.sorensen@ntnu.no> 
+  
+  Roger Skjetne (D2V principal researcher): <roger.skjetne@ntnu.no>
