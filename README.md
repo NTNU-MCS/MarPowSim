@@ -15,15 +15,36 @@ Please include the following reference when you use the MarPowSim toolbox:
 
 Also, we encourage to credit the following open access journal article upon using this toolbox:
 
-Bø, T.I., A.R. Dahl, T.A. Johansen, E. Mathiesen, M.R. Miyazaki, E. Pedersen, R. Skjetne, A.J. Sørensen, L. Thorat, and K. K. Yum, “Marine Vessel and Power Plant System Simulator.” IEEE Access, Vol. 3, pp. 2065-2079, 2015.
+Bø, T.I., A.R. Dahl, T.A. Johansen, E. Mathiesen, M.R. Miyazaki, E. Pedersen, R. Skjetne, A.J. Sørensen, L. Thorat, and K. K. Yum, `Marine Vessel and Power Plant System Simulator.` IEEE Access, Vol. 3, pp. 2065-2079, 2015.
 
-
+# How to use the library
 Copy the folder /marpowsim to your Matlab folder and "add the path with subfolders" to Matlab path. You can run install.m to do this automatically. Then, see "How to build a model.docx"
--
 
-For questions, please contact: 
+# How to run examples
+The examples requires the following dependencies:
+- MATLAB R2013a
+- Supported compiler (For windows VS 2010, VS 2012, Win SDK 7)
+- ACADO (http://acado.github.io/matlab_overview.html)
+- MSS toolbox (http://marinecontrol.org/download.html)
 
-  Torstein Ingebrigtsen Bø (main developer): <Torstein.Bo@sintef.no> 
+To produce a new model the following steps are recomended:
+- Make the simulink diagram
+- Make a initialization file (example init.m)
+- Run updateDiagram(‘newModel’,thursters, generators); where newModel.slx is the filename of the Simulink model.
+- Open folder `Model/Files/ThrusterAllocation/src`
+- Edit the file `make.m` to point to the acado library (lines lines 31, 37 or 41)
+- Run `make('path to init file','file name', 'path to save the compiled files')`, where 'path to init file' is where your initialization files are, 'file name' is the initialization file name and 'path to save the compiled files' is where the output files should be saved
+- Open folder `../../PowerManagementSystem`
+- Run `make`
+- Go back to root folder
+- Open Simulink diagram
+- Set solver to variable-step ode15s, set `Sover Jacobian method` to `Full perturbation`.
+
+
+
+## For questions, please contact: 
+
+  Torstein Aarseth Bø (main developer): <Torstein.Bo@sintef.no> 
       
   Kevin Koosup Yum (developer): <KevinKoosup.Yum@sintef.no> 
       

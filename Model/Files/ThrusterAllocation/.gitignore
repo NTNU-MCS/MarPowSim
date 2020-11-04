@@ -1,0 +1,15 @@
+/Debug
+/Documentation
+/html
+/.settings
+/Default
+/TA
+TA.xcodeproj
+/Matlab
+/build
+/ipch
+/Release
+
+/Default4.4
+
+/gmon.out

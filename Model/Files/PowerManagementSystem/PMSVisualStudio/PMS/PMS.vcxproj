@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5A376A87-6945-49D2-907E-DAEDB98DC91E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PMS</RootNamespace>
+    <ProjectName>PowerManagementSystem</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>C:\Users\torstebo\Documents\doktor\PowerSimulator\PowerManagementSystem;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Bus.cpp" />
+    <ClCompile Include="..\..\src\CircuitBreakerOpeningDetector.cpp" />
+    <ClCompile Include="..\..\src\DPLoad.cpp" />
+    <ClCompile Include="..\..\src\FastLoadReduction.cpp" />
+    <ClCompile Include="..\..\src\Fault.cpp" />
+    <ClCompile Include="..\..\src\FaultDetector.cpp" />
+    <ClCompile Include="..\..\src\FaultList.cpp" />
+    <ClCompile Include="..\..\src\GeneratorSet.cpp" />
+    <ClCompile Include="..\..\src\GeneratorsetMerger.cpp" />
+    <ClCompile Include="..\..\src\Load.cpp" />
+    <ClCompile Include="..\..\src\LossOfGeneratorsetDetector.cpp" />
+    <ClCompile Include="..\..\src\MergeLoad.cpp" />
+    <ClCompile Include="..\..\src\PowerAvailable.cpp" />
+    <ClCompile Include="..\..\src\PowerManagementSystem.cpp" />
+    <ClCompile Include="..\..\src\PowerPlant.cpp" />
+    <ClCompile Include="..\..\src\Switchboard.cpp" />
+    <ClCompile Include="..\..\src\Thruster.cpp" />
+    <ClCompile Include="..\..\src\ThrusterMerger.cpp" />
+    <ClCompile Include="..\src\cwrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Bus.h" />
+    <ClInclude Include="..\..\src\CircuitBreakerOpeningDetector.h" />
+    <ClInclude Include="..\..\src\DPLoad.h" />
+    <ClInclude Include="..\..\src\FastLoadReduction.h" />
+    <ClInclude Include="..\..\src\Fault.h" />
+    <ClInclude Include="..\..\src\FaultDetector.h" />
+    <ClInclude Include="..\..\src\FaultList.h" />
+    <ClInclude Include="..\..\src\GeneratorSet.h" />
+    <ClInclude Include="..\..\src\GeneratorsetMerger.h" />
+    <ClInclude Include="..\..\src\Load.h" />
+    <ClInclude Include="..\..\src\LossOfGeneratorsetDetector.h" />
+    <ClInclude Include="..\..\src\MergeLoad.h" />
+    <ClInclude Include="..\..\src\PowerAvailable.h" />
+    <ClInclude Include="..\..\src\PowerManagementSystem.h" />
+    <ClInclude Include="..\..\src\PowerPlant.h" />
+    <ClInclude Include="..\..\src\Switchboard.h" />
+    <ClInclude Include="..\..\src\Thruster.h" />
+    <ClInclude Include="..\..\src\ThrusterMerger.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

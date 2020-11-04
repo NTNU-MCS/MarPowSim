@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.toolchain.gnu.base.638432089">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.gnu.base.638432089" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="ThrusterAllocationAcadoLinux" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" id="cdt.managedbuild.toolchain.gnu.base.638432089" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.34397594" name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.70853295" name="cdt.managedbuild.toolchain.gnu.base" resourceTypeBasedDiscovery="true" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.1213866254" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder buildPath="${workspace_loc:/ThrusterAllocationAcadoLinux}/Default" enableAutoBuild="false" enabledIncrementalBuild="true" id="cdt.managedbuild.target.gnu.builder.base.1356202235" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="false" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1002667405" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool command="g++" id="cdt.managedbuild.tool.gnu.cpp.compiler.base.918370975" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.1649761622" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/acado}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.other.other.959013707" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -std=c++0x" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.14078993" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.optimization.level.2051148494" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.gprof.886801313" name="Generate gprof information (-pg)" superClass="gnu.cpp.compiler.option.debugging.gprof" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.debugging.prof.1895075267" name="Generate prof information (-p)" superClass="gnu.cpp.compiler.option.debugging.prof" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2136346689" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool command="gcc" id="cdt.managedbuild.tool.gnu.c.compiler.base.1257925379" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.include.paths.766994149" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.optimization.level.1716068938" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.2084867874" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.prof.291936854" name="Generate prof information (-p)" superClass="gnu.c.compiler.option.debugging.prof" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.debugging.gprof.1394199426" name="Generate gprof information (-pg)" superClass="gnu.c.compiler.option.debugging.gprof" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2064324598" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.30040926" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool command="g++" id="cdt.managedbuild.tool.gnu.cpp.linker.base.1530766701" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<option id="gnu.cpp.link.option.libs.1022474152" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="acado_toolkit_s"/>
+									<listOptionValue builtIn="false" value="pthread"/>
+								</option>
+								<option id="gnu.cpp.link.option.debugging.gprof.909606799" name="Generate gprof information (-pg)" superClass="gnu.cpp.link.option.debugging.gprof" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.flags.1636461276" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-ftest-coverage -fprofile-arcs" valueType="string"/>
+								<option id="gnu.cpp.link.option.debugging.prof.970975289" name="Generate prof information (-p)" superClass="gnu.cpp.link.option.debugging.prof" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.941924584" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1838601562" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<option id="gnu.both.asm.option.include.paths.304903066" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2013587824" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.1371588889" name="NIwrapper.h" rcbsApplicability="disable" resourcePath="NIwrapper.h" toolsToInvoke=""/>
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.985261064" name="/" resourcePath="test">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.561800206" name="cdt.managedbuild.toolchain.gnu.base" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.377688342" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1002667405"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.300906872" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.918370975">
+								<option id="gnu.cpp.compiler.option.include.paths.1025339482" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/acado}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocation/contrib}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.654842540" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.804735212" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.1257925379">
+								<option id="gnu.c.compiler.option.include.paths.402976557" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocation/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocation/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.489459453" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.537550501" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base.30040926"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1412189357" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base.1530766701"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1049912977" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base.1838601562">
+								<option id="gnu.both.asm.option.include.paths.1683589540" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1347779449" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.1636045637" name="AllTest.cpp" rcbsApplicability="disable" resourcePath="test/AllTest.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.base.300906872.1076562532">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.300906872.1076562532" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.300906872">
+							<option id="gnu.cpp.compiler.option.include.paths.555527128" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/acado}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/contrib}&quot;"/>
+							</option>
+							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1858134972" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1929846860" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1066135276" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1697039467" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.483683873" name="resource.h" rcbsApplicability="disable" resourcePath="resource.h" toolsToInvoke=""/>
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.850793511" name="/" resourcePath="contrib">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.606090598" name="cdt.managedbuild.toolchain.gnu.base" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.602670318" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1002667405"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.591118462" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.918370975">
+								<option id="gnu.cpp.compiler.option.include.paths.1373262741" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.299301785" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.62326565" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.1257925379">
+								<option id="gnu.c.compiler.option.include.paths.2094578501" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1366675946" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.314082980" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base.30040926"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1866874766" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base.1530766701"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1691710834" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base.1838601562">
+								<option id="gnu.both.asm.option.include.paths.2067498901" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1136766017" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.561351666" name="simulinkGetters.h" rcbsApplicability="disable" resourcePath="src/simulinkGetters.h" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.1722650263" name="cwrapper.h" rcbsApplicability="disable" resourcePath="cwrapper.h" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry excluding="src/sfun_thrust_allocation.cpp|TA_veristand|TA_veristand_test|resource.h|NIwrapper.h|NIwrapper.cpp|cwrapper.h|cwrapper.cpp|test/ThrusterAllocation_failing_sim.cpp|test/ThrusterAllocation_fixedThrusters.cpp|src/singularity_cost_hessian.cpp|src/singularity_cost.c|src/simulinkGetters.cpp|src/simulinkGetters.h|test/ThrusterAllocation_test_simulink.cpp|src/sfun_thruster_allocation.cpp|test/ThrusterAllocation_test.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.toolchain.gnu.base.638432089.2078163184">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.gnu.base.638432089.2078163184" moduleId="org.eclipse.cdt.core.settings" name="Matlab">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="ThrusterAllocationAcadoLinux" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" id="cdt.managedbuild.toolchain.gnu.base.638432089.2078163184" name="Matlab" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.2078163184." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.612185565" name="cdt.managedbuild.toolchain.gnu.base" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.2014107980" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder buildPath="${workspace_loc:/ThrusterAllocationAcadoLinux}/Default" enableAutoBuild="false" enabledIncrementalBuild="true" id="cdt.managedbuild.target.gnu.builder.base.556516543" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1699092192" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.327783851" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.96370585" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+									<listOptionValue builtIn="false" value="/usr/local/MATLAB/R2012b/simulink/include"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.other.other.109464090" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -std=c++0x" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1668337914" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.optimization.level.310669304" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.gprof.1809307194" name="Generate gprof information (-pg)" superClass="gnu.cpp.compiler.option.debugging.gprof" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.711383891" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.1793364141" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.include.paths.1026443234" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+									<listOptionValue builtIn="false" value="/usr/local/MATLAB/R2012b/simulink/include"/>
+								</option>
+								<option id="gnu.c.compiler.option.optimization.level.1463523419" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1808519287" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.570539281" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1310774941" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1225341949" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<option id="gnu.cpp.link.option.libs.925585096" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="acado_toolkit_s"/>
+									<listOptionValue builtIn="false" value="pthread"/>
+								</option>
+								<option id="gnu.cpp.link.option.debugging.gprof.1624515425" name="Generate gprof information (-pg)" superClass="gnu.cpp.link.option.debugging.gprof" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.774312929" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.152753031" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<option id="gnu.both.asm.option.include.paths.845876464" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+									<listOptionValue builtIn="false" value="/usr/local/MATLAB/R2012b/simulink/include"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.65137156" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.2078163184.test" name="/" resourcePath="test">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.672849837" name="cdt.managedbuild.toolchain.gnu.base" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.767976000" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.183847311" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1699092192"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.447146475" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.327783851">
+								<option id="gnu.cpp.compiler.option.include.paths.1836515086" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.56586228" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.589925463" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.1793364141">
+								<option id="gnu.c.compiler.option.include.paths.477816626" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2049157434" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.391471189" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base.1310774941"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.2024014697" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base.1225341949"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1073358802" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base.152753031">
+								<option id="gnu.both.asm.option.include.paths.1434817307" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2038568009" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.2078163184.contrib" name="/" resourcePath="contrib">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.709327874" name="cdt.managedbuild.toolchain.gnu.base" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.1613363739" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.819974410" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1699092192"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1622636433" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.327783851">
+								<option id="gnu.cpp.compiler.option.include.paths.1085775993" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1582514112" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.487133626" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.1793364141">
+								<option id="gnu.c.compiler.option.include.paths.785150591" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.650615284" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.670755202" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base.1310774941"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1112584648" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base.1225341949"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1653498710" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base.152753031">
+								<option id="gnu.both.asm.option.include.paths.416837139" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.403526252" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="test/ThrusterAllocation_test_simulink.cpp|test/ThrusterAllocation_test.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.toolchain.gnu.base.638432089.1133511389">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.gnu.base.638432089.1133511389" moduleId="org.eclipse.cdt.core.settings" name="Default4.4">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="ThrusterAllocationAcadoLinux" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" id="cdt.managedbuild.toolchain.gnu.base.638432089.1133511389" name="Default4.4" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.1133511389." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.1333354353" name="cdt.managedbuild.toolchain.gnu.base" nonInternalBuilderId="cdt.managedbuild.target.gnu.builder.base" resourceTypeBasedDiscovery="true" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.1133361920" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder buildPath="${workspace_loc:/ThrusterAllocationAcadoLinux}/Default4.4" id="cdt.managedbuild.target.gnu.builder.base.804331377" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1978679488" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool command="g++-4.4" id="cdt.managedbuild.tool.gnu.cpp.compiler.base.240554249" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.2073046609" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.other.other.409274817" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -ftest-coverage -fprofile-arcs -std=c++0x" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1450371767" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.optimization.level.980192399" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.gprof.1361249081" name="Generate gprof information (-pg)" superClass="gnu.cpp.compiler.option.debugging.gprof" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1958557002" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool command="gcc-4.4" id="cdt.managedbuild.tool.gnu.c.compiler.base.928986074" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.include.paths.1427754855" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.optimization.level.619181402" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1480338421" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.misc.other.1370979612" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -ftest-coverage -fprofile-arcs  -std=c++0x" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.494840073" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.901513499" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool command="g++-4.4" id="cdt.managedbuild.tool.gnu.cpp.linker.base.1830811931" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<option id="gnu.cpp.link.option.libs.661142577" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="acado_toolkit_s"/>
+									<listOptionValue builtIn="false" value="pthread"/>
+								</option>
+								<option id="gnu.cpp.link.option.debugging.gprof.840845776" name="Generate gprof information (-pg)" superClass="gnu.cpp.link.option.debugging.gprof" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.flags.46671538" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-ftest-coverage -fprofile-arcs -std=c++0x" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.452060557" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.591957521" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<option id="gnu.both.asm.option.include.paths.1507407603" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1809178824" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.1133511389.test" name="/" resourcePath="test">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.2001674518" name="cdt.managedbuild.toolchain.gnu.base" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.1670602844" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1154073722" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1978679488"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1791098429" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.240554249">
+								<option id="gnu.cpp.compiler.option.include.paths.225162941" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1022880919" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.2028092561" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.928986074">
+								<option id="gnu.c.compiler.option.include.paths.326076143" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.288686309" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1050796857" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base.901513499"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.546702311" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base.1830811931"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1213831647" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base.591957521">
+								<option id="gnu.both.asm.option.include.paths.1571792240" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages/eigen3}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1908482584" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.1133511389.contrib" name="/" resourcePath="contrib">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.165758866" name="cdt.managedbuild.toolchain.gnu.base" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.1698583650" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1982879625" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1978679488"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.870913575" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.240554249">
+								<option id="gnu.cpp.compiler.option.include.paths.247535676" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.728118040" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.947115365" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.928986074">
+								<option id="gnu.c.compiler.option.include.paths.2012548852" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.146360782" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.75638494" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base.901513499"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1960454797" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base.1830811931"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.624440527" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base.591957521">
+								<option id="gnu.both.asm.option.include.paths.1161090245" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/acado/external_packages}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ThrusterAllocationAcadoLinux/contrib}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.545178002" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.toolchain.gnu.base.638432089.1133511389.280513660" name="simulinkGetters.h" rcbsApplicability="disable" resourcePath="src/simulinkGetters.h" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry excluding="src/singularity_cost.c|src/simulinkGetters.h|src/simulinkGetters.cpp|test/ThrusterAllocation_test_simulink.cpp|src/sfun_thruster_allocation.cpp|test/ThrusterAllocation_test.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="ThrusterAllocationAcadoLinux.null.1053037586" name="ThrusterAllocationAcadoLinux"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/ThrusterAllocationAcadoLinux"/>
+		</configuration>
+		<configuration configurationName="Default4.4">
+			<resource resourceType="PROJECT" workspacePath="/ThrusterAllocationAcadoLinux"/>
+		</configuration>
+		<configuration configurationName="Matlab">
+			<resource resourceType="PROJECT" workspacePath="/ThrusterAllocationAcadoLinux"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.638432089.2078163184;cdt.managedbuild.toolchain.gnu.base.638432089.2078163184.;cdt.managedbuild.tool.gnu.cpp.compiler.base.327783851;cdt.managedbuild.tool.gnu.cpp.compiler.input.711383891">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.638432089;cdt.managedbuild.toolchain.gnu.base.638432089.34397594;cdt.managedbuild.tool.gnu.cpp.compiler.base.918370975;cdt.managedbuild.tool.gnu.cpp.compiler.input.2136346689">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.638432089.1133511389;cdt.managedbuild.toolchain.gnu.base.638432089.1133511389.;cdt.managedbuild.tool.gnu.c.compiler.base.928986074;cdt.managedbuild.tool.gnu.c.compiler.input.494840073">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.638432089;cdt.managedbuild.toolchain.gnu.base.638432089.34397594;cdt.managedbuild.tool.gnu.c.compiler.base.1257925379;cdt.managedbuild.tool.gnu.c.compiler.input.2064324598">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.638432089.1133511389;cdt.managedbuild.toolchain.gnu.base.638432089.1133511389.;cdt.managedbuild.tool.gnu.cpp.compiler.base.240554249;cdt.managedbuild.tool.gnu.cpp.compiler.input.1958557002">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.638432089.2078163184;cdt.managedbuild.toolchain.gnu.base.638432089.2078163184.;cdt.managedbuild.tool.gnu.c.compiler.base.1793364141;cdt.managedbuild.tool.gnu.c.compiler.input.570539281">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

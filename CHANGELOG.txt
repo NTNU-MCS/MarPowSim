@@ -1,0 +1,4 @@
+0.0.2:
+	- Added some missing parameters.
+	- Retuned DP to be more relaxed.
+
