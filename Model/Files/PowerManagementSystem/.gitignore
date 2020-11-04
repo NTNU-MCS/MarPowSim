@@ -1,0 +1,10 @@
+Debug
+.gitignore~
+documentation/
+Release
+binMatlab
+PMStest_grt_rtw
+slprj
+*.mexa64
+*~
+/Matlab

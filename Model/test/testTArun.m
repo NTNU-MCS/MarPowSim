@@ -1,0 +1,18 @@
+%    Copyright: 	NTNU, Trondheim, Norway
+%    Licensed under GPL-3.0
+%    Created:  	2014-2017	Torstein Aarseth Bø <torstein.bo@sintef.no>
+
+cd ..
+init
+cd tests
+
+copyfile('../sfun_thruster_allocation.mex*','.')
+
+addpath('..')
+nbus = 1;
+switchboard2bus = [1 1 1];
+u_old = [-0.021181803858358751 0.021181803851851106	-0.038942104661707069 0.03894210455596573 -0.021181803955349666			0.021181803948799684];
+powerAvailableBus = [2568514.3607636942 0 0];
+FLRThrusters = [6348780.6406300487	6348780.6406304799 6522822.7028749902 6522822.7028749725 			6348780.6406475836 6348780.640630668];
+tau_d = [879482.61182011827 1.672023080960795e-07	1.4644506984440428e-05];
+sim testTA

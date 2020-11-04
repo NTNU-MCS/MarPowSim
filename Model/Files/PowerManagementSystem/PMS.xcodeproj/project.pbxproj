@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC66C24B18C07AAF00F6C09E /* Bus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C22B18C07AAF00F6C09E /* Bus.cpp */; };
+		DC66C24C18C07AAF00F6C09E /* CircuitBreakerOpeningDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C22D18C07AAF00F6C09E /* CircuitBreakerOpeningDetector.cpp */; };
+		DC66C24D18C07AAF00F6C09E /* FastLoadReduction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C22F18C07AAF00F6C09E /* FastLoadReduction.cpp */; };
+		DC66C24E18C07AAF00F6C09E /* Fault.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23118C07AAF00F6C09E /* Fault.cpp */; };
+		DC66C24F18C07AAF00F6C09E /* FaultDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23318C07AAF00F6C09E /* FaultDetector.cpp */; };
+		DC66C25018C07AAF00F6C09E /* GeneratorSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23518C07AAF00F6C09E /* GeneratorSet.cpp */; };
+		DC66C25118C07AAF00F6C09E /* GeneratorsetMerger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23718C07AAF00F6C09E /* GeneratorsetMerger.cpp */; };
+		DC66C25218C07AAF00F6C09E /* Load.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23918C07AAF00F6C09E /* Load.cpp */; };
+		DC66C25318C07AAF00F6C09E /* LossOfGeneratorsetDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23B18C07AAF00F6C09E /* LossOfGeneratorsetDetector.cpp */; };
+		DC66C25418C07AAF00F6C09E /* MergeLoad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23D18C07AAF00F6C09E /* MergeLoad.cpp */; };
+		DC66C25518C07AAF00F6C09E /* PowerAvailable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23F18C07AAF00F6C09E /* PowerAvailable.cpp */; };
+		DC66C25618C07AAF00F6C09E /* PowerManagementSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24118C07AAF00F6C09E /* PowerManagementSystem.cpp */; };
+		DC66C25718C07AAF00F6C09E /* PowerPlant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24318C07AAF00F6C09E /* PowerPlant.cpp */; };
+		DC66C25818C07AAF00F6C09E /* Switchboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24518C07AAF00F6C09E /* Switchboard.cpp */; };
+		DC66C25918C07AAF00F6C09E /* Thruster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24718C07AAF00F6C09E /* Thruster.cpp */; };
+		DC66C25A18C07AAF00F6C09E /* ThrusterMerger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24918C07AAF00F6C09E /* ThrusterMerger.cpp */; };
+		DCB4585618D047D000D04CF2 /* DPLoad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB4585418D047D000D04CF2 /* DPLoad.cpp */; };
+		DCB4586418D0481000D04CF2 /* AllTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB4585918D0481000D04CF2 /* AllTests.cpp */; };
+		DCB4587D18D049E400D04CF2 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB4587B18D049E400D04CF2 /* libgtest_main.a */; };
+		DCB4587E18D049E400D04CF2 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB4587C18D049E400D04CF2 /* libgtest.a */; };
+		DCB4588E18D0631E00D04CF2 /* AllTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB4585918D0481000D04CF2 /* AllTests.cpp */; };
+		DCB4588F18D0636B00D04CF2 /* DPLoad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB4585418D047D000D04CF2 /* DPLoad.cpp */; };
+		DCB4589018D0636B00D04CF2 /* DPLoad.h in Sources */ = {isa = PBXBuildFile; fileRef = DCB4585518D047D000D04CF2 /* DPLoad.h */; };
+		DCB4589118D0636B00D04CF2 /* Bus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C22B18C07AAF00F6C09E /* Bus.cpp */; };
+		DCB4589218D0636B00D04CF2 /* Bus.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C22C18C07AAF00F6C09E /* Bus.h */; };
+		DCB4589318D0636B00D04CF2 /* CircuitBreakerOpeningDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C22D18C07AAF00F6C09E /* CircuitBreakerOpeningDetector.cpp */; };
+		DCB4589418D0636B00D04CF2 /* CircuitBreakerOpeningDetector.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C22E18C07AAF00F6C09E /* CircuitBreakerOpeningDetector.h */; };
+		DCB4589518D0636B00D04CF2 /* FastLoadReduction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C22F18C07AAF00F6C09E /* FastLoadReduction.cpp */; };
+		DCB4589618D0636B00D04CF2 /* FastLoadReduction.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23018C07AAF00F6C09E /* FastLoadReduction.h */; };
+		DCB4589718D0636B00D04CF2 /* Fault.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23118C07AAF00F6C09E /* Fault.cpp */; };
+		DCB4589818D0636B00D04CF2 /* Fault.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23218C07AAF00F6C09E /* Fault.h */; };
+		DCB4589918D0636B00D04CF2 /* FaultDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23318C07AAF00F6C09E /* FaultDetector.cpp */; };
+		DCB4589A18D0636B00D04CF2 /* FaultDetector.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23418C07AAF00F6C09E /* FaultDetector.h */; };
+		DCB4589B18D0636B00D04CF2 /* GeneratorSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23518C07AAF00F6C09E /* GeneratorSet.cpp */; };
+		DCB4589C18D0636B00D04CF2 /* GeneratorSet.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23618C07AAF00F6C09E /* GeneratorSet.h */; };
+		DCB4589D18D0636B00D04CF2 /* GeneratorsetMerger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23718C07AAF00F6C09E /* GeneratorsetMerger.cpp */; };
+		DCB4589E18D0636B00D04CF2 /* GeneratorsetMerger.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23818C07AAF00F6C09E /* GeneratorsetMerger.h */; };
+		DCB4589F18D0636B00D04CF2 /* Load.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23918C07AAF00F6C09E /* Load.cpp */; };
+		DCB458A018D0636B00D04CF2 /* Load.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23A18C07AAF00F6C09E /* Load.h */; };
+		DCB458A118D0636B00D04CF2 /* LossOfGeneratorsetDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23B18C07AAF00F6C09E /* LossOfGeneratorsetDetector.cpp */; };
+		DCB458A218D0636B00D04CF2 /* LossOfGeneratorsetDetector.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23C18C07AAF00F6C09E /* LossOfGeneratorsetDetector.h */; };
+		DCB458A318D0636B00D04CF2 /* MergeLoad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23D18C07AAF00F6C09E /* MergeLoad.cpp */; };
+		DCB458A418D0636B00D04CF2 /* MergeLoad.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23E18C07AAF00F6C09E /* MergeLoad.h */; };
+		DCB458A518D0636B00D04CF2 /* PowerAvailable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C23F18C07AAF00F6C09E /* PowerAvailable.cpp */; };
+		DCB458A618D0636B00D04CF2 /* PowerAvailable.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24018C07AAF00F6C09E /* PowerAvailable.h */; };
+		DCB458A718D0636B00D04CF2 /* PowerManagementSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24118C07AAF00F6C09E /* PowerManagementSystem.cpp */; };
+		DCB458A818D0636B00D04CF2 /* PowerManagementSystem.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24218C07AAF00F6C09E /* PowerManagementSystem.h */; };
+		DCB458A918D0636B00D04CF2 /* PowerPlant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24318C07AAF00F6C09E /* PowerPlant.cpp */; };
+		DCB458AA18D0636B00D04CF2 /* PowerPlant.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24418C07AAF00F6C09E /* PowerPlant.h */; };
+		DCB458AB18D0636B00D04CF2 /* Switchboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24518C07AAF00F6C09E /* Switchboard.cpp */; };
+		DCB458AC18D0636B00D04CF2 /* Switchboard.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24618C07AAF00F6C09E /* Switchboard.h */; };
+		DCB458AD18D0636B00D04CF2 /* Thruster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24718C07AAF00F6C09E /* Thruster.cpp */; };
+		DCB458AE18D0636B00D04CF2 /* Thruster.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24818C07AAF00F6C09E /* Thruster.h */; };
+		DCB458AF18D0636B00D04CF2 /* ThrusterMerger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24918C07AAF00F6C09E /* ThrusterMerger.cpp */; };
+		DCB458B018D0636B00D04CF2 /* ThrusterMerger.h in Sources */ = {isa = PBXBuildFile; fileRef = DC66C24A18C07AAF00F6C09E /* ThrusterMerger.h */; };
+		DCB458B118D063BA00D04CF2 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB4587B18D049E400D04CF2 /* libgtest_main.a */; };
+		DCB458B218D063BA00D04CF2 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB4587C18D049E400D04CF2 /* libgtest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCB4588C18D0619C00D04CF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC12EFC218C079FF00642602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC12EFC718C079FF00642602;
+			remoteInfo = PMS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCB4588118D04BB800D04CF2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DC12EFCB18C079FF00642602 /* mex.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = mex.xcconfig; sourceTree = "<group>"; };
+		DC66C22B18C07AAF00F6C09E /* Bus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bus.cpp; sourceTree = "<group>"; };
+		DC66C22C18C07AAF00F6C09E /* Bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bus.h; sourceTree = "<group>"; };
+		DC66C22D18C07AAF00F6C09E /* CircuitBreakerOpeningDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircuitBreakerOpeningDetector.cpp; sourceTree = "<group>"; };
+		DC66C22E18C07AAF00F6C09E /* CircuitBreakerOpeningDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircuitBreakerOpeningDetector.h; sourceTree = "<group>"; };
+		DC66C22F18C07AAF00F6C09E /* FastLoadReduction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FastLoadReduction.cpp; sourceTree = "<group>"; };
+		DC66C23018C07AAF00F6C09E /* FastLoadReduction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastLoadReduction.h; sourceTree = "<group>"; };
+		DC66C23118C07AAF00F6C09E /* Fault.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fault.cpp; sourceTree = "<group>"; };
+		DC66C23218C07AAF00F6C09E /* Fault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fault.h; sourceTree = "<group>"; };
+		DC66C23318C07AAF00F6C09E /* FaultDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FaultDetector.cpp; sourceTree = "<group>"; };
+		DC66C23418C07AAF00F6C09E /* FaultDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaultDetector.h; sourceTree = "<group>"; };
+		DC66C23518C07AAF00F6C09E /* GeneratorSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeneratorSet.cpp; sourceTree = "<group>"; };
+		DC66C23618C07AAF00F6C09E /* GeneratorSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratorSet.h; sourceTree = "<group>"; };
+		DC66C23718C07AAF00F6C09E /* GeneratorsetMerger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeneratorsetMerger.cpp; sourceTree = "<group>"; };
+		DC66C23818C07AAF00F6C09E /* GeneratorsetMerger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratorsetMerger.h; sourceTree = "<group>"; };
+		DC66C23918C07AAF00F6C09E /* Load.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Load.cpp; sourceTree = "<group>"; };
+		DC66C23A18C07AAF00F6C09E /* Load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Load.h; sourceTree = "<group>"; };
+		DC66C23B18C07AAF00F6C09E /* LossOfGeneratorsetDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LossOfGeneratorsetDetector.cpp; sourceTree = "<group>"; };
+		DC66C23C18C07AAF00F6C09E /* LossOfGeneratorsetDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LossOfGeneratorsetDetector.h; sourceTree = "<group>"; };
+		DC66C23D18C07AAF00F6C09E /* MergeLoad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MergeLoad.cpp; sourceTree = "<group>"; };
+		DC66C23E18C07AAF00F6C09E /* MergeLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeLoad.h; sourceTree = "<group>"; };
+		DC66C23F18C07AAF00F6C09E /* PowerAvailable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PowerAvailable.cpp; sourceTree = "<group>"; };
+		DC66C24018C07AAF00F6C09E /* PowerAvailable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerAvailable.h; sourceTree = "<group>"; };
+		DC66C24118C07AAF00F6C09E /* PowerManagementSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PowerManagementSystem.cpp; sourceTree = "<group>"; };
+		DC66C24218C07AAF00F6C09E /* PowerManagementSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerManagementSystem.h; sourceTree = "<group>"; };
+		DC66C24318C07AAF00F6C09E /* PowerPlant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PowerPlant.cpp; sourceTree = "<group>"; };
+		DC66C24418C07AAF00F6C09E /* PowerPlant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerPlant.h; sourceTree = "<group>"; };
+		DC66C24518C07AAF00F6C09E /* Switchboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Switchboard.cpp; sourceTree = "<group>"; };
+		DC66C24618C07AAF00F6C09E /* Switchboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Switchboard.h; sourceTree = "<group>"; };
+		DC66C24718C07AAF00F6C09E /* Thruster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Thruster.cpp; sourceTree = "<group>"; };
+		DC66C24818C07AAF00F6C09E /* Thruster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thruster.h; sourceTree = "<group>"; };
+		DC66C24918C07AAF00F6C09E /* ThrusterMerger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThrusterMerger.cpp; sourceTree = "<group>"; };
+		DC66C24A18C07AAF00F6C09E /* ThrusterMerger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThrusterMerger.h; sourceTree = "<group>"; };
+		DC66C25B18C07ACB00F6C09E /* sfun_PMS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sfun_PMS.cpp; sourceTree = "<group>"; };
+		DCB4580A18D0464400D04CF2 /* gtest-all.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gtest-all.cc"; sourceTree = "<group>"; };
+		DCB4580B18D0464400D04CF2 /* gtest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gtest.h; sourceTree = "<group>"; };
+		DCB4580E18D0469B00D04CF2 /* PMS.mexmaci64 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = PMS.mexmaci64; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB4585418D047D000D04CF2 /* DPLoad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DPLoad.cpp; sourceTree = "<group>"; };
+		DCB4585518D047D000D04CF2 /* DPLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLoad.h; sourceTree = "<group>"; };
+		DCB4585918D0481000D04CF2 /* AllTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AllTests.cpp; sourceTree = "<group>"; };
+		DCB4585A18D0481000D04CF2 /* Bus_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bus_test.cpp; sourceTree = "<group>"; };
+		DCB4585B18D0481000D04CF2 /* CircuitBreakerOpeningDetectorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircuitBreakerOpeningDetectorTest.cpp; sourceTree = "<group>"; };
+		DCB4585C18D0481000D04CF2 /* FastLoadReductionTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FastLoadReductionTest.cpp; sourceTree = "<group>"; };
+		DCB4585D18D0481000D04CF2 /* GeneratorSetTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeneratorSetTest.cpp; sourceTree = "<group>"; };
+		DCB4585E18D0481000D04CF2 /* LossOfGeneratorsetDetectorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LossOfGeneratorsetDetectorTest.cpp; sourceTree = "<group>"; };
+		DCB4585F18D0481000D04CF2 /* PowerAvailableTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PowerAvailableTest.cpp; sourceTree = "<group>"; };
+		DCB4586018D0481000D04CF2 /* PowerManagementTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PowerManagementTest.cpp; sourceTree = "<group>"; };
+		DCB4586118D0481000D04CF2 /* PowerPlantTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PowerPlantTest.cpp; sourceTree = "<group>"; };
+		DCB4586218D0481000D04CF2 /* SwitchboardTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SwitchboardTest.cpp; sourceTree = "<group>"; };
+		DCB4586318D0481000D04CF2 /* TestTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestTest.cpp; sourceTree = "<group>"; };
+		DCB4587B18D049E400D04CF2 /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest_main.a; path = "../../programs/googletest-read-only/mybuild/Debug/libgtest_main.a"; sourceTree = "<group>"; };
+		DCB4587C18D049E400D04CF2 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = "../../programs/googletest-read-only/mybuild/Debug/libgtest.a"; sourceTree = "<group>"; };
+		DCB4588318D04BB800D04CF2 /* unittest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = unittest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCB4587A18D049AD00D04CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB4587D18D049E400D04CF2 /* libgtest_main.a in Frameworks */,
+				DCB4587E18D049E400D04CF2 /* libgtest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB4588018D04BB800D04CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB458B118D063BA00D04CF2 /* libgtest_main.a in Frameworks */,
+				DCB458B218D063BA00D04CF2 /* libgtest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC12EFC118C079FF00642602 = {
+			isa = PBXGroup;
+			children = (
+				DCB4587B18D049E400D04CF2 /* libgtest_main.a */,
+				DCB4587C18D049E400D04CF2 /* libgtest.a */,
+				DCB4585818D0481000D04CF2 /* test */,
+				DCB4580818D0464400D04CF2 /* contrib */,
+				DC66C25B18C07ACB00F6C09E /* sfun_PMS.cpp */,
+				DC66C22A18C07AAF00F6C09E /* src */,
+				DC12EFCA18C079FF00642602 /* PMS */,
+				DCB4580E18D0469B00D04CF2 /* PMS.mexmaci64 */,
+				DCB4588318D04BB800D04CF2 /* unittest */,
+			);
+			sourceTree = "<group>";
+		};
+		DC12EFCA18C079FF00642602 /* PMS */ = {
+			isa = PBXGroup;
+			children = (
+				DC12EFCB18C079FF00642602 /* mex.xcconfig */,
+			);
+			path = PMS;
+			sourceTree = "<group>";
+		};
+		DC66C22A18C07AAF00F6C09E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DCB4585418D047D000D04CF2 /* DPLoad.cpp */,
+				DCB4585518D047D000D04CF2 /* DPLoad.h */,
+				DC66C22B18C07AAF00F6C09E /* Bus.cpp */,
+				DC66C22C18C07AAF00F6C09E /* Bus.h */,
+				DC66C22D18C07AAF00F6C09E /* CircuitBreakerOpeningDetector.cpp */,
+				DC66C22E18C07AAF00F6C09E /* CircuitBreakerOpeningDetector.h */,
+				DC66C22F18C07AAF00F6C09E /* FastLoadReduction.cpp */,
+				DC66C23018C07AAF00F6C09E /* FastLoadReduction.h */,
+				DC66C23118C07AAF00F6C09E /* Fault.cpp */,
+				DC66C23218C07AAF00F6C09E /* Fault.h */,
+				DC66C23318C07AAF00F6C09E /* FaultDetector.cpp */,
+				DC66C23418C07AAF00F6C09E /* FaultDetector.h */,
+				DC66C23518C07AAF00F6C09E /* GeneratorSet.cpp */,
+				DC66C23618C07AAF00F6C09E /* GeneratorSet.h */,
+				DC66C23718C07AAF00F6C09E /* GeneratorsetMerger.cpp */,
+				DC66C23818C07AAF00F6C09E /* GeneratorsetMerger.h */,
+				DC66C23918C07AAF00F6C09E /* Load.cpp */,
+				DC66C23A18C07AAF00F6C09E /* Load.h */,
+				DC66C23B18C07AAF00F6C09E /* LossOfGeneratorsetDetector.cpp */,
+				DC66C23C18C07AAF00F6C09E /* LossOfGeneratorsetDetector.h */,
+				DC66C23D18C07AAF00F6C09E /* MergeLoad.cpp */,
+				DC66C23E18C07AAF00F6C09E /* MergeLoad.h */,
+				DC66C23F18C07AAF00F6C09E /* PowerAvailable.cpp */,
+				DC66C24018C07AAF00F6C09E /* PowerAvailable.h */,
+				DC66C24118C07AAF00F6C09E /* PowerManagementSystem.cpp */,
+				DC66C24218C07AAF00F6C09E /* PowerManagementSystem.h */,
+				DC66C24318C07AAF00F6C09E /* PowerPlant.cpp */,
+				DC66C24418C07AAF00F6C09E /* PowerPlant.h */,
+				DC66C24518C07AAF00F6C09E /* Switchboard.cpp */,
+				DC66C24618C07AAF00F6C09E /* Switchboard.h */,
+				DC66C24718C07AAF00F6C09E /* Thruster.cpp */,
+				DC66C24818C07AAF00F6C09E /* Thruster.h */,
+				DC66C24918C07AAF00F6C09E /* ThrusterMerger.cpp */,
+				DC66C24A18C07AAF00F6C09E /* ThrusterMerger.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		DCB4580818D0464400D04CF2 /* contrib */ = {
+			isa = PBXGroup;
+			children = (
+				DCB4580918D0464400D04CF2 /* gtest */,
+			);
+			path = contrib;
+			sourceTree = "<group>";
+		};
+		DCB4580918D0464400D04CF2 /* gtest */ = {
+			isa = PBXGroup;
+			children = (
+				DCB4580A18D0464400D04CF2 /* gtest-all.cc */,
+				DCB4580B18D0464400D04CF2 /* gtest.h */,
+			);
+			path = gtest;
+			sourceTree = "<group>";
+		};
+		DCB4585818D0481000D04CF2 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				DCB4585918D0481000D04CF2 /* AllTests.cpp */,
+				DCB4585A18D0481000D04CF2 /* Bus_test.cpp */,
+				DCB4585B18D0481000D04CF2 /* CircuitBreakerOpeningDetectorTest.cpp */,
+				DCB4585C18D0481000D04CF2 /* FastLoadReductionTest.cpp */,
+				DCB4585D18D0481000D04CF2 /* GeneratorSetTest.cpp */,
+				DCB4585E18D0481000D04CF2 /* LossOfGeneratorsetDetectorTest.cpp */,
+				DCB4585F18D0481000D04CF2 /* PowerAvailableTest.cpp */,
+				DCB4586018D0481000D04CF2 /* PowerManagementTest.cpp */,
+				DCB4586118D0481000D04CF2 /* PowerPlantTest.cpp */,
+				DCB4586218D0481000D04CF2 /* SwitchboardTest.cpp */,
+				DCB4586318D0481000D04CF2 /* TestTest.cpp */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC12EFC718C079FF00642602 /* PMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC12EFCE18C079FF00642602 /* Build configuration list for PBXNativeTarget "PMS" */;
+			buildPhases = (
+				DC12EFC618C079FF00642602 /* Sources */,
+				DCB4587A18D049AD00D04CF2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PMS;
+			productName = PMS;
+			productReference = DCB4580E18D0469B00D04CF2 /* PMS.mexmaci64 */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		DCB4588218D04BB800D04CF2 /* unittest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB4588918D04BB800D04CF2 /* Build configuration list for PBXNativeTarget "unittest" */;
+			buildPhases = (
+				DCB4587F18D04BB800D04CF2 /* Sources */,
+				DCB4588018D04BB800D04CF2 /* Frameworks */,
+				DCB4588118D04BB800D04CF2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB4588D18D0619C00D04CF2 /* PBXTargetDependency */,
+			);
+			name = unittest;
+			productName = unittest;
+			productReference = DCB4588318D04BB800D04CF2 /* unittest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC12EFC218C079FF00642602 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = DC12EFC518C079FF00642602 /* Build configuration list for PBXProject "PMS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC12EFC118C079FF00642602;
+			productRefGroup = DC12EFC118C079FF00642602;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC12EFC718C079FF00642602 /* PMS */,
+				DCB4588218D04BB800D04CF2 /* unittest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC12EFC618C079FF00642602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC66C24B18C07AAF00F6C09E /* Bus.cpp in Sources */,
+				DC66C24C18C07AAF00F6C09E /* CircuitBreakerOpeningDetector.cpp in Sources */,
+				DC66C24D18C07AAF00F6C09E /* FastLoadReduction.cpp in Sources */,
+				DC66C24E18C07AAF00F6C09E /* Fault.cpp in Sources */,
+				DC66C24F18C07AAF00F6C09E /* FaultDetector.cpp in Sources */,
+				DC66C25018C07AAF00F6C09E /* GeneratorSet.cpp in Sources */,
+				DC66C25118C07AAF00F6C09E /* GeneratorsetMerger.cpp in Sources */,
+				DC66C25218C07AAF00F6C09E /* Load.cpp in Sources */,
+				DC66C25318C07AAF00F6C09E /* LossOfGeneratorsetDetector.cpp in Sources */,
+				DC66C25418C07AAF00F6C09E /* MergeLoad.cpp in Sources */,
+				DC66C25518C07AAF00F6C09E /* PowerAvailable.cpp in Sources */,
+				DC66C25618C07AAF00F6C09E /* PowerManagementSystem.cpp in Sources */,
+				DC66C25718C07AAF00F6C09E /* PowerPlant.cpp in Sources */,
+				DC66C25818C07AAF00F6C09E /* Switchboard.cpp in Sources */,
+				DC66C25918C07AAF00F6C09E /* Thruster.cpp in Sources */,
+				DC66C25A18C07AAF00F6C09E /* ThrusterMerger.cpp in Sources */,
+				DCB4585618D047D000D04CF2 /* DPLoad.cpp in Sources */,
+				DCB4586418D0481000D04CF2 /* AllTests.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB4587F18D04BB800D04CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB4588F18D0636B00D04CF2 /* DPLoad.cpp in Sources */,
+				DCB4589018D0636B00D04CF2 /* DPLoad.h in Sources */,
+				DCB4589118D0636B00D04CF2 /* Bus.cpp in Sources */,
+				DCB4589218D0636B00D04CF2 /* Bus.h in Sources */,
+				DCB4589318D0636B00D04CF2 /* CircuitBreakerOpeningDetector.cpp in Sources */,
+				DCB4589418D0636B00D04CF2 /* CircuitBreakerOpeningDetector.h in Sources */,
+				DCB4589518D0636B00D04CF2 /* FastLoadReduction.cpp in Sources */,
+				DCB4589618D0636B00D04CF2 /* FastLoadReduction.h in Sources */,
+				DCB4589718D0636B00D04CF2 /* Fault.cpp in Sources */,
+				DCB4589818D0636B00D04CF2 /* Fault.h in Sources */,
+				DCB4589918D0636B00D04CF2 /* FaultDetector.cpp in Sources */,
+				DCB4589A18D0636B00D04CF2 /* FaultDetector.h in Sources */,
+				DCB4589B18D0636B00D04CF2 /* GeneratorSet.cpp in Sources */,
+				DCB4589C18D0636B00D04CF2 /* GeneratorSet.h in Sources */,
+				DCB4589D18D0636B00D04CF2 /* GeneratorsetMerger.cpp in Sources */,
+				DCB4589E18D0636B00D04CF2 /* GeneratorsetMerger.h in Sources */,
+				DCB4589F18D0636B00D04CF2 /* Load.cpp in Sources */,
+				DCB458A018D0636B00D04CF2 /* Load.h in Sources */,
+				DCB458A118D0636B00D04CF2 /* LossOfGeneratorsetDetector.cpp in Sources */,
+				DCB458A218D0636B00D04CF2 /* LossOfGeneratorsetDetector.h in Sources */,
+				DCB458A318D0636B00D04CF2 /* MergeLoad.cpp in Sources */,
+				DCB458A418D0636B00D04CF2 /* MergeLoad.h in Sources */,
+				DCB458A518D0636B00D04CF2 /* PowerAvailable.cpp in Sources */,
+				DCB458A618D0636B00D04CF2 /* PowerAvailable.h in Sources */,
+				DCB458A718D0636B00D04CF2 /* PowerManagementSystem.cpp in Sources */,
+				DCB458A818D0636B00D04CF2 /* PowerManagementSystem.h in Sources */,
+				DCB458A918D0636B00D04CF2 /* PowerPlant.cpp in Sources */,
+				DCB458AA18D0636B00D04CF2 /* PowerPlant.h in Sources */,
+				DCB458AB18D0636B00D04CF2 /* Switchboard.cpp in Sources */,
+				DCB458AC18D0636B00D04CF2 /* Switchboard.h in Sources */,
+				DCB458AD18D0636B00D04CF2 /* Thruster.cpp in Sources */,
+				DCB458AE18D0636B00D04CF2 /* Thruster.h in Sources */,
+				DCB458AF18D0636B00D04CF2 /* ThrusterMerger.cpp in Sources */,
+				DCB458B018D0636B00D04CF2 /* ThrusterMerger.h in Sources */,
+				DCB4588E18D0631E00D04CF2 /* AllTests.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCB4588D18D0619C00D04CF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC12EFC718C079FF00642602 /* PMS */;
+			targetProxy = DCB4588C18D0619C00D04CF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DC12EFCC18C079FF00642602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC12EFCB18C079FF00642602 /* mex.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DC12EFCD18C079FF00642602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC12EFCB18C079FF00642602 /* mex.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DC12EFCF18C079FF00642602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mexmaci64;
+				HEADER_SEARCH_PATHS = (
+					"$(MATLABROOT)/extern/include",
+					"$(MATLABROOT)/simulink/include",
+					"$(SRCROOT)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(MATLABROOT)/bin/maci64",
+					"/Users/torsteinibo/Documents/programs/googletest-read-only/mybuild",
+					"\"$(SRCROOT)/../../programs/googletest-read-only/mybuild/Debug\"",
+				);
+				MACH_O_TYPE = mh_bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-lmx",
+					"-lmex",
+					"-lmat",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(SRCROOT)/build/$(CONFIGURATION)";
+			};
+			name = Debug;
+		};
+		DC12EFD018C079FF00642602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = mexmaci64;
+				HEADER_SEARCH_PATHS = (
+					"$(MATLABROOT)/extern/include",
+					"$(MATLABROOT)/simulink/include",
+					"$(SRCROOT)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(MATLABROOT)/bin/maci64",
+					"/Users/torsteinibo/Documents/programs/googletest-read-only/mybuild",
+					"\"$(SRCROOT)/../../programs/googletest-read-only/mybuild/Debug\"",
+				);
+				MACH_O_TYPE = mh_bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-lmx",
+					"-lmex",
+					"-lmat",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(SRCROOT)/build/$(CONFIGURATION)";
+			};
+			name = Release;
+		};
+		DCB4588A18D04BB800D04CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../programs/googletest-read-only/mybuild/Debug\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCB4588B18D04BB800D04CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../programs/googletest-read-only/mybuild/Debug\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC12EFC518C079FF00642602 /* Build configuration list for PBXProject "PMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC12EFCC18C079FF00642602 /* Debug */,
+				DC12EFCD18C079FF00642602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC12EFCE18C079FF00642602 /* Build configuration list for PBXNativeTarget "PMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC12EFCF18C079FF00642602 /* Debug */,
+				DC12EFD018C079FF00642602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB4588918D04BB800D04CF2 /* Build configuration list for PBXNativeTarget "unittest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB4588A18D04BB800D04CF2 /* Debug */,
+				DCB4588B18D04BB800D04CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC12EFC218C079FF00642602 /* Project object */;
+}

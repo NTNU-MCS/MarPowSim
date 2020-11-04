@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\codegen.c" />
+    <ClCompile Include="..\src\pmsWrapper.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\header\cwrapper.h" />
+    <ClInclude Include="..\header\model.h" />
+    <ClInclude Include="..\header\NIVERISTAND_API.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{56D90407-EFBE-4FC3-82B8-8BAE6F1EDB53}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(IntDir)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_NI_mswin32_;_WINDOWS;_USRDLL;PMSLABWINDOWS_EXPORTS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files (x86)\National Instruments\CVI2013\include\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\activex\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\custctrl\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\cvirtsup\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\datasock\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\localui\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\printing\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\reportgen\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\toolbox\;D:\Program Files (x86)\National Instruments\Shared\CVI\include\;D:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\;D:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\custctrl\;C:\ProgramData\National Instruments\CVI2013\include\;C:\ProgramData\National Instruments\CVI\include\;C:\Program Files (x86)\IVI Foundation\IVI\Include\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Include\;C:\Users\torstebo\Documents\doktor\PowerSimulator\PowerManagementSystem\;C:\Users\torstebo\Documents\doktor\PowerSimulator\PowerManagementSystem\LabWindows\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>cviauto.lib;cviddc.lib;cvidotnet.lib;cvinetstreams.lib;cvinetv.lib;cvintwrk.lib;cvirt.lib;cvisupp.lib;cvitdms.lib;gpib.lib;nivxi.lib;omp.lib;ivi.lib;nisyscfg.lib;visa.lib;analysis.lib;reganlys.lib;C:\Users\torstebo\Documents\doktor\PMSwin\PMS\Debug\PMS.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Program Files (x86)\National Instruments\CVI2013\extlib\msvc\;D:\Program Files (x86)\National Instruments\CVI2013\extlib\;D:\Program Files (x86)\National Instruments\Shared\CVI\extlib\msvc\;D:\Program Files (x86)\National Instruments\Shared\CVI\extlib\;C:\ProgramData\National Instruments\CVI2013\extlib\msvc\;C:\ProgramData\National Instruments\CVI2013\extlib\;C:\ProgramData\National Instruments\CVI\extlib\msvc\;C:\ProgramData\National Instruments\CVI\extlib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <BaseAddress>268435456</BaseAddress>
+      <OutputFile>$(OutDir)/PmsLabWindows.dll</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_NI_mswin32_;_WINDOWS;_USRDLL;PMSLABWINDOWS_EXPORTS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files (x86)\National Instruments\CVI2013\include\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\activex\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\custctrl\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\cvirtsup\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\datasock\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\localui\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\printing\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\reportgen\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\toolbox\;D:\Program Files (x86)\National Instruments\Shared\CVI\include\;D:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\;D:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\custctrl\;C:\ProgramData\National Instruments\CVI2013\include\;C:\ProgramData\National Instruments\CVI\include\;C:\Program Files (x86)\IVI Foundation\IVI\Include\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Include\;C:\Users\torstebo\Documents\doktor\PowerSimulator\PowerManagementSystem\;C:\Users\torstebo\Documents\doktor\PowerSimulator\PowerManagementSystem\LabWindows\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>cviauto.lib;cviddc.lib;cvidotnet.lib;cvinetstreams.lib;cvinetv.lib;cvintwrk.lib;cvirt.lib;cvisupp.lib;cvitdms.lib;gpib.lib;nivxi.lib;omp.lib;ivi.lib;nisyscfg.lib;visa.lib;analysis.lib;reganlys.lib;PowerManagementSystem.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Program Files (x86)\National Instruments\CVI2013\extlib\msvc\;D:\Program Files (x86)\National Instruments\CVI2013\extlib\;D:\Program Files (x86)\National Instruments\Shared\CVI\extlib\msvc\;D:\Program Files (x86)\National Instruments\Shared\CVI\extlib\;C:\ProgramData\National Instruments\CVI2013\extlib\msvc\;C:\ProgramData\National Instruments\CVI2013\extlib\;C:\ProgramData\National Instruments\CVI\extlib\msvc\;C:\ProgramData\National Instruments\CVI\extlib\;$(OutDir)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <BaseAddress>268435456</BaseAddress>
+      <OutputFile>$(OutDir)/PmsLabWindows.dll</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_NI_mswin64_;_WINDOWS;_USRDLL;PMSLABWINDOWS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files (x86)\National Instruments\CVI2013\include\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\activex\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\custctrl\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\cvirtsup\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\datasock\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\localui\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\printing\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\reportgen\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\toolbox\;D:\Program Files (x86)\National Instruments\Shared\CVI\include\;D:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\;D:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\custctrl\;C:\ProgramData\National Instruments\CVI2013\include\;C:\ProgramData\National Instruments\CVI\include\;C:\Program Files\IVI Foundation\IVI\Include\;C:\Program Files\IVI Foundation\VISA\Win64\Include\;C:\Users\torstebo\Documents\doktor\PowerSimulator\PowerManagementSystem\;C:\Users\torstebo\Documents\doktor\PowerSimulator\PowerManagementSystem\LabWindows\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>cviauto.lib;cviddc.lib;cvidotnet.lib;cvinetstreams.lib;cvinetv.lib;cvintwrk.lib;cvirt.lib;cvisupp.lib;cvitdms.lib;gpib.lib;omp.lib;ivi.lib;nisyscfg.lib;visa.lib;analysis.lib;reganlys.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Program Files (x86)\National Instruments\CVI2013\extlib\msvc64\;D:\Program Files (x86)\National Instruments\Shared\CVI\extlib\msvc64\;C:\ProgramData\National Instruments\CVI2013\extlib\msvc64\;C:\ProgramData\National Instruments\CVI\extlib\msvc64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <BaseAddress>268435456</BaseAddress>
+      <OutputFile>$(OutDir)/PmsLabWindows.dll</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_NI_mswin64_;_WINDOWS;_USRDLL;PMSLABWINDOWS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files (x86)\National Instruments\CVI2013\include\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\activex\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\custctrl\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\cvirtsup\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\datasock\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\localui\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\printing\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\reportgen\;D:\Program Files (x86)\National Instruments\CVI2013\toolslib\toolbox\;D:\Program Files (x86)\National Instruments\Shared\CVI\include\;D:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\;D:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\custctrl\;C:\ProgramData\National Instruments\CVI2013\include\;C:\ProgramData\National Instruments\CVI\include\;C:\Program Files\IVI Foundation\IVI\Include\;C:\Program Files\IVI Foundation\VISA\Win64\Include\;C:\Users\torstebo\Documents\doktor\PowerSimulator\PowerManagementSystem\;C:\Users\torstebo\Documents\doktor\PowerSimulator\PowerManagementSystem\LabWindows\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>cviauto.lib;cviddc.lib;cvidotnet.lib;cvinetstreams.lib;cvinetv.lib;cvintwrk.lib;cvirt.lib;cvisupp.lib;cvitdms.lib;gpib.lib;omp.lib;ivi.lib;nisyscfg.lib;visa.lib;analysis.lib;reganlys.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Program Files (x86)\National Instruments\CVI2013\extlib\msvc64\;D:\Program Files (x86)\National Instruments\Shared\CVI\extlib\msvc64\;C:\ProgramData\National Instruments\CVI2013\extlib\msvc64\;C:\ProgramData\National Instruments\CVI\extlib\msvc64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <BaseAddress>268435456</BaseAddress>
+      <OutputFile>$(OutDir)/PmsLabWindows.dll</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
